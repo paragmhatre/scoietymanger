@@ -1,0 +1,251 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{# Display a form #}
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Society Manager</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">सभासद फॉर्म</a></li>
+            <li><a href="/pavti_pushtak/">पावती पुस्तक</a></li>
+            <li><a href="#">खर्च पावती</a></li>
+            <li><a href="#">सभासद लेजर</a></li>
+            <li><a href="#">कॅश बुक</a></li>
+            <li><a href="#">हिशोब</a></li>
+            <li><a href="#">ताळेबंद पत्रक</a></li>
+            <li><a href="#">बँक लेजर</a></li>
+            <li><a href="#">ठेव रजिस्टर</a></li>
+
+        </ul>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+    <div class="col-md-offset-3 col-sm-8 col-md-6">
+        <div class="thumbnail">
+            <div class="caption" style="padding:10px">
+                <div class="row">
+                    <div class="col-sm-8 col-md-6">
+                        <h4>Sabhasad No : 7350</h4>
+                    </div>
+                    <div class="col-md-offset-3 col-sm-3 col-md-3">
+                        <h4>Form No. 2</h4>
+                    </div>
+                </div>
+                <h3 style="padding-bottom:10px" align="center">MEMBERSHIP APPLICATION FORM </h3>
+                <h5 style="padding-bottom:10px" align="center">[Under the Bye-Law No.19(a)]</h5>
+                <h5 style="padding-bottom:10px" align="center">A form of application for Membership of the Society by
+                    Individual </h5>
+                <h5>To,</h5>
+                <h5>The Chief Promoter - The Secretary</h5>
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <textarea style="padding:10px" type="text" name="address" class="form-control"
+                                  aria-describedby="basic-addon1"></textarea>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <h5>Co-operative Housing Society Ltd. (Proposed)* </h5>
+                    </div>
+                </div>
+                <br>
+                <h5>Sir,</h5>
+                <h5>I, Shri/Shrimati </h5>
+                <input style="padding:10px" type="text" name="name" class="form-control"
+                       aria-describedby="basic-addon1">
+
+                <h5>hereby make an application for membership of the </h5>
+                <input style="padding:10px" type="text" name="society_name" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>Co-operative Housing Society Ltd.</h5>
+                <h5>I intend to settle down and reside in the area of operation of the society.</h5>
+                <h5>My Particulars for the purpose of consideration of this application as under:</h5>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Age</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="age" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Occupation</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="occupation" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Monthly Income</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="income" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Office Address</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <textarea style="padding:10px" type="text" name="address" class="form-control"
+                                  aria-describedby="basic-addon1"></textarea>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Office Telephone Number</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="number" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Residential Address</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <textarea style="padding:10px" type="text" name="address" class="form-control"
+                                  aria-describedby="basic-addon1"></textarea>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Residential Telephone Number</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="number" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+
+                <h5>I have purchased the flat No. </h5>
+                <input style="padding:10px" type="text" name="register_number" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>in the building, named / known as</h5>
+                <input style="padding:10px" type="text" name="register_number" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>admeasuring</h5>
+                <input style="padding:10px" type="text" name="register_number" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>sq. meters from the Promoter (Builder) or Shri / Shrimati / Messrs</h5>
+                <input style="padding:10px" type="text" name="register_number" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>under an agreement under Section 4 of the Ownership Flats Act. a Copy of which duly attested is
+                    enclosed as to registration the copy of which is enclosed herewith. </h5>
+                <h5>I declare that the said agreement is duly stamped as required under the Bombay Stamp Act.1958 as to
+                    the registration the copy of which is enclosed herewith. </h5>
+                <h4 align="center">OR</h4>
+                <h5>I give below the particulars of the Plot/Flat/House owned by me or by any of the members of my
+                    family or the person dependent on me in the area of operation of the society:</h5>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Name of the person</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="number" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Particulars of the plot/flat/house owned by the applicant or any of the member of this
+                            family or the person dependent on him in the area dependent on him in the area of operation
+                            of the society</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="number" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Location of the plot/flat/house</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="number" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-4">
+                        <h5>Reason as to why it is necessary to have a flat in this society</h5>
+                    </div>
+                    <div class="col-sm-6 col-md-6">
+                        <input style="padding:10px" type="text" name="number" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+
+                </div>
+
+                <h5>I remit herewith a sum of Rs 500/- towards value of 10 shares of Rs 50 each and 100/- Rs entrance
+                    fee. </h5>
+                <h5>I undertake to discharge all the present and future liabilities to the society</h5>
+                <h4 align="center">OR</h4>
+                <h5>As I have no independence source of income , I enclose here with the undertaking, in the prescribed
+                    form from the person on whom i am dependent to the effect that he will discharge all the present and
+                    future liabilities to the society on my behalf. </h5>
+                <h5>I also enclosed the undertaking and the declaration in the prescribed forms about registration of
+                    the proposed acquisition of right over the flat under section 269-AB under the income Tax Act.</h5>
+                <h5>I undertake to use the flat for the purpose for which it is purchased by me and that any charge of
+                    user will be made with the prior approval of the society. An undertaking to that effect in the
+                    prescribed from is enclosed herewith.</h5>
+                <h5>I have gone through the registered Bye-Lows of the society and undertake to abide by the same and
+                    any notification in the registering Authority may make in them.</h5>
+                <h5>I request you to please admit me as a member of the society</h5>
+                <h5 align="right"> Yours faithfully</h5>
+                <br>
+                <br>
+                <h5 align="right">(Signature of Applicant)</h5>
+                <br>
+                <br>
+                <h5>Place:</h5>
+                <h5>Date:</h5>
+                <br>
+                <h5>Attested By:</h5>
+                <br>
+                <br>
+                <h5>Chief Promoter/Chairman</h5>
+                <br>
+                <h5>The Expression "a member of family" means as defined under Bye-law No. 3 (xxv)</h5>
+
+                <p style="padding-top:10px" align="center"><a href="#" class="btn btn-success" role="button">क्रिएट सभासद</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

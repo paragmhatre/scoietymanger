@@ -1,0 +1,105 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+{# Display a form #}
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Society Manager</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li ><a href="/login/">Logout</a></li>
+
+        </ul>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<h1 align="center">Sarvoday Nager Society</h1>
+<h3 align="center">Register Number:PAN2133122</h3>
+<div class="row">
+    <div style="padding:10px;" class=" col-sm-offset-1 col-sm-2 col-md-2">
+            <h1 align="center">
+                <form style="margin:0px;" action="/add_sabhasad/">
+              <button style="width:200px"  class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span style="font-size:80px" class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <br>सभासद फॉर्म</h1></button>
+                    </form>
+            </h1>
+    </div>
+    <div style="padding:10px;" class=" col-sm-2 col-md-2">
+            <h1 align="center">
+                <form style="margin:0px;" action="/pavti_pushtak/">
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span  style="font-size:80px" class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                <br>पावती पुस्तक</h1></button>
+                    </form>
+            </h1>
+    </div>
+    <div style="padding:10px;" class="  col-sm-2 col-md-2">
+            <h1 align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span  style="font-size:80px" class="glyphicon glyphicon-file" aria-hidden="true"></span>
+                <br>खर्च पावती</h1></button>
+            </h1>
+    </div>
+    <div style="padding:10px;" class="  col-sm-2 col-md-2">
+            <h1 align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span  style="font-size:80px" class="glyphicon glyphicon-list" aria-hidden="true"></span>
+                <br>सभासद लेजर</h1></button>
+            </h1>
+    </div>
+    <div  style="padding:10px;" class="  col-sm-2 col-md-2">
+            <h1  align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span style="font-size:80px" class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                <br>कॅश बुक</h1></button>
+            </h1>
+    </div>
+</div>
+<div class="row">
+    <div style="padding:10px;" class=" col-sm-offset-1 col-sm-2 col-md-2">
+            <h1 align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span style="font-size:80px" class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                <br>हिशोब</h1></button>
+            </h1>
+    </div>
+    <div style="padding:10px;" class=" col-sm-2 col-md-2">
+            <h1 align="center">
+
+              <button style="width:200px"  class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span  style="font-size:80px" class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                <br>ताळेबंद पत्रक</h1></button>
+            </h1>
+    </div>
+    <div style="padding:10px;" class="  col-sm-2 col-md-2">
+            <h1 align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span  style="font-size:80px" class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
+                <br>बँक लेजर</h1></button>
+            </h1>
+    </div>
+    <div style="padding:10px;" class="  col-sm-2 col-md-2">
+            <h1 align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span  style="font-size:80px" class="glyphicon glyphicon-open-file" aria-hidden="true"></span>
+                <br>ठेव रजिस्टर</h1></button>
+            </h1>
+    </div>
+    <div  style="padding:10px;" class="  col-sm-2 col-md-2">
+            <h1  align="center">
+
+              <button style="width:200px" class="btn btn-default" type="submit"><h1 style="color:#42b0f4;"><span style="font-size:80px" class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+                <br>शेअर रजिस्टर</h1></button>
+            </h1>
+    </div>
+</div>
+

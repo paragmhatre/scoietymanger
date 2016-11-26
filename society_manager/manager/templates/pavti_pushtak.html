@@ -1,0 +1,147 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+{# Display a form #}
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Society Manager</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/add_sabhasad/">सभासद फॉर्म</a></li>
+            <li class="active"><a href="#">पावती पुस्तक</a></li>
+            <li><a href="#">खर्च पावती</a></li>
+            <li><a href="#">सभासद लेजर</a></li>
+            <li><a href="#">कॅश बुक</a></li>
+            <li><a href="#">हिशोब</a></li>
+            <li><a href="#">ताळेबंद पत्रक</a></li>
+            <li><a href="#">बँक लेजर</a></li>
+            <li><a href="#">ठेव रजिस्टर</a></li>
+
+        </ul>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+    <div class="col-md-offset-3 col-sm-8 col-md-6">
+        <div class="thumbnail">
+            <div class="caption" style="padding:10px">
+                <div class="row">
+                    <div class="col-sm-6 col-md-6">
+                        <h4>Recipt Number : 123</h4>
+                    </div>
+
+                    <div class="col-md-offset-2 col-sm-4 col-md-4">
+                        <h4>Date : 5/4/2016</h4>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-3 col-md-3">
+                        <h5>Sabhasad No : </h5>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <input style="padding:10px" type="text" name="income" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-md-3">
+                        <h5>Name : </h5>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <h5>Parag Sanjay Mhatre</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-md-3">
+                        <h5>Address :</h5>
+                    </div>
+
+                    <div class="col-sm-8 col-md-8">
+                        <h5>23 1st Main Road,Bengaluru (Pin 560029)Karnataka (KA)</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 col-md-3">
+                        <h5>Flat Number/House Number :</h5>
+                    </div>
+
+                    <div class="col-sm-8 col-md-8">
+                        <h5>B-202</h5>
+                    </div>
+                </div>
+                <table class="table table-hover">
+                    <th width="60%">Type</th>
+                    <th>Amount</th>
+                    <th>Remove</th>
+                    <tr>
+                        <td>Share</td>
+                        <td><input style="padding:10px;float:left" type="text" name="income" class="form-control"
+                                   aria-describedby="basic-addon1"></td>
+                        <td align="center" style="padding-top:15px;"><span
+                                class="glyphicon glyphicon-remove-sign"></span></td>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td><b>300</b></td>
+                        <td align="center"></td>
+                    </tr>
+                </table>
+                <h5>Received with thanks</h5>
+
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Cash
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Cheque</input>
+
+                            </label>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <h5>Cheque Number : </h5>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4">
+                        <input style="padding:10px" type="text" name="income" class="form-control"
+                               aria-describedby="basic-addon1">
+                    </div>
+                </div>
+
+                <p style="padding-top:10px" align="center"><a href="#" class="btn btn-success" role="button">प्रिंट</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2 col-md-2">
+        <div class="list-group">
+            <a href="#" class="list-group-item">
+                Share
+            </a>
+            <a href="#" class="list-group-item">Watchman</a>
+            <a href="#" class="list-group-item">Pooja</a>
+            <a href="#" class="list-group-item">Holi</a>
+            <a href="#" class="list-group-item">15 Augest</a>
+            <li class="list-group-item list-group-item-success">
+                <div align="center">Add New</div>
+            </li>
+        </div>
+
+    </div>
+</div>

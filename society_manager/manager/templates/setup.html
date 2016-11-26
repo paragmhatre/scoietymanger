@@ -1,0 +1,90 @@
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{# Display a form #}
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Society Manager</a>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+
+<div class="row">
+    <div class="col-md-offset-3 col-sm-8 col-md-6">
+        <div class="thumbnail">
+            <div class="caption" style="padding:10px">
+                <h3 style="padding-bottom:10px">Setup Society</h3>
+                <h5>Society Name</h5>
+                <input style="padding:10px" type="text" name="name" class="form-control"
+                       aria-describedby="basic-addon1">
+
+                <h5>Society Address</h5>
+                <textarea style="padding:10px" type="text" name="address" class="form-control"
+                          aria-describedby="basic-addon1"></textarea>
+
+                <h5>Register Number</h5>
+                <input style="padding:10px" type="text" name="register_number" class="form-control"
+                       aria-describedby="basic-addon1">
+
+                <h5>Opening Balance Bank</h5>
+                <input style="padding:10px" type="text" name="opening_balance" class="form-control"
+                       aria-describedby="basic-addon1">
+
+                <h5>Opening Balance Cash</h5>
+                <input style="padding:10px" type="text" name="opening_balance" class="form-control"
+                       aria-describedby="basic-addon1">
+
+                <h5>Secretory Username for login</h5>
+                <input style="padding:10px" type="text" name="username" class="form-control"
+                       aria-describedby="basic-addon1">
+
+                <h5>Secretory Password for login</h5>
+                <input style="padding:10px" type="password" name="username" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>Secretory Email</h5>
+                <input style="padding:10px" type="password" name="username" class="form-control"
+                       aria-describedby="basic-addon1">
+                <h5>Management Panel</h5>
+                <table class="table table-hover">
+                    <th width="60%">Name</th>
+                    <th>Post</th>
+                    <th>Remove</th>
+                    <tr>
+                        <td><input style="padding:10px;float:left" type="text" name="income" class="form-control"
+                                   aria-describedby="basic-addon1"></td>
+                        <td>
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                    <option>Manager</option>
+                                    <option>Chairman</option>
+                                    <option>Secretory</option>
+
+                                </select>
+                            </div>
+                        </td>
+                        <td align="center" style="padding-top:15px;"><span
+                                class="glyphicon glyphicon-remove-sign"></span></td>
+                    </tr>
+                    <tr style="padding:0px;">
+
+                        <td style="padding:0px;" colspan="3" align="center" style="padding-top:15px;"><p style="padding-top:10px" align="center"><a href="#" class="btn btn-success" role="button">Add Member</a></p></td>
+
+                    </tr>
+                </table>
+                <hr>
+                <p style="padding-top:10px" align="center"><a href="#" class="btn btn-success" role="button">Start</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
